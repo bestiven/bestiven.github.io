@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+  <script>
+    function aleatorio (max,min){
+    return Math.floor(Math.random()* (max-min + 1)+ min)
+    }
+    let jugador= 0
+    let pc =aleatorio(1,3)
+
+
+    jugador=prompt("Elije: 1.piedra 2.papel 3.tijera")
+
+    if(jugador==1){
+      alert("elegiste Piedra")
+
+    } else if(jugador==2){
+      alert("elegiste papel" ) 
+    }
+    else if (jugador==3){
+      alert("elegiste Tijera" ) 
+    }
+    else{
+      alert("Error")
+    }
+
+    if(pc==1){
+      alert(" Piedra")
+
+    } else if(pc==2){
+      alert("papel" ) 
+    }
+    else if (pc==3){
+      alert("Tijera" ) 
+    }
+    else{
+      alert("Error")
+    }
+
+   //combate
+   if (pc==jugador){
+    alert("EMPATEE")
+   }
+   else if (jugador==1 && pc==3){
+    alert("GANASTE")
+   }
+   else if (jugador==2 && pc ==1){
+    alert("GANASTE")
+   }
+   else if (jugador==3 && pc==2){
+    alert("GANASTE")
+   }
+   else{
+    alert("perdiste :( )")
+   }
+
+
+  </script>
+
+</head>
+
+
+<body>
+    
+</body>
+</html>
